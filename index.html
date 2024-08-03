@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaguebazaar</title>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <!-- Egyéb meta tagok és stíluslapok -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <center>    
+                <h1>Leaguebazaar</h1>
+                <nav>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Accounts</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="login.html" class="btn">Login</a></li>
+                            <li><a href="register.html" class="btn">Register</a></li>
+                        </ul>
+                    </nav>
+                 
+             </nav></center>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Buy Brawl Stars Accounts💲</h2>
+                <p>Your one-stop shop for you.</p>
+                <a href="register.html" class="btn btn-get-started">Get Started</a> <!-- A Get Started gomb linkel a Register oldalra -->
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <h3>Best prices🛒</h3>
+                    <p>we work with the best prices on the market.💲</p>
+                </div>
+                <div class="feature">
+                    <h3>Secure Transactions.🛡️</h3>
+                    <p>We ensure your transactions are safe and secure.🧠</p>
+                </div>
+                <div class="feature">
+                    <h3>24/7 Support📞</h3>
+                    <p>Our support team is available anytime you need help.✉️</p>
+          
+                </div>
+            </div>
+        </section>
+    
+    
+    </main>
+
+
+    
+
+
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" title="Discord" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" title="Tiktok" aria-label="Tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Brawl Stars Account For Sale. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <div id="notification" class="notification"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loggedIn = localStorage.getItem('loggedIn');
+            const userStatus = document.getElementById('user-status');
+            if (loggedIn === 'true') {
+                userStatus.innerHTML = 'You are logged in.';
+                userStatus.style.color = 'green';
+                document.querySelector('.btn-login').style.display = 'none';
+                document.querySelector('.btn-register').style.display = 'none';
+            } else {
+                userStatus.innerHTML = 'You are not logged in.';
+                userStatus.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>

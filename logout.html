@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Logout</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn btn-login">Home</a></li>
+                    <li><a href="login.html" class="btn btn-register">Login</a></li>
+                    <li><a href="register.html" class="btn btn-register">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="logout-section">
+            <div class="container">
+                <h2>Logout</h2>
+                <p>You have been logged out. <a href="login.html">Login again</a></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Brawl Stars Account For Sale. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            localStorage.removeItem('loggedIn');
+            window.location.href = 'index.html'; // Redirect to home page after logout
+        });
+    </script>
+</body>
+</html>
